@@ -334,6 +334,7 @@ body {
 .submit-btn {
     background-color: #000000;
     color: #ffffff;
+    width: 600px;
     border: none;
     padding: 14px 30px;
     font-size: 1rem;
@@ -345,6 +346,7 @@ body {
 
 .submit-btn:hover {
     background-color: #333333;
+    width: 440px;
 }
 
 /* Responsive Design */
@@ -357,4 +359,128 @@ body {
     .contact-title h2 {
         font-size: 2rem;
     }
+}
+
+/* Footer Section */
+.footer-section {
+    background-color: #f8f9fa; /* Light gray background */
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer-logo {
+    font-size: 95px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #4E47FF;
+}
+
+.footer-description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #666666;
+    margin-bottom: 30px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #03dac6; /* Teal accent color on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .footer-links {
+        gap: 20px;
+    }
+    
+    .footer-description {
+        font-size: 1rem;
+    }
+}
+
+
+
+.feedback-section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.feedback-section h2 {
+    font-size: 28px;
+    color: #222;
+    margin-bottom: 40px;
+}
+
+.feedback-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.feedback-card {
+    background: #fff;
+    padding: 20px;
+    width: 280px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+    text-align: left;
+}
+
+.stars img {
+    width: 20px;
+    height: 20px;
+}
+
+.feedback-card h3 {
+    margin: 15px 0 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.feedback-card p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.reviewer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.reviewer img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.reviewer strong {
+    font-size: 14px;
+    color: #222;
+}
+
+.reviewer small {
+    font-size: 12px;
+    color: #999;
 }
