@@ -3,7 +3,7 @@ body {
 
     margin: 0;
     font-family: 'Inter', sans-serif;
-    background-color: #f4f1f1;
+    background-color: lab(98.69% 0.34 0.11);
     color: #ffffff;
 }
 .nav-logo{
@@ -276,5 +276,85 @@ body {
     
     .stat-number {
         font-size: 2.5rem;
+    }
+}
+
+/* Contact Section */
+.contact-section {
+    background-color: #ffffff;
+    padding: 80px 20px;
+}
+
+.contact-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 60px;
+}
+
+.contact-title {
+    flex: 1;
+}
+
+.contact-title h2 {
+    font-size: 97px;
+    color: #000000;
+    margin-bottom: 0;
+}
+
+.contact-form {
+    flex: 1;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #000000;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.form-group textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+.submit-btn {
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    padding: 14px 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #333333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .contact-title h2 {
+        font-size: 2rem;
     }
 }
