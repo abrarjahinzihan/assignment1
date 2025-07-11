@@ -57,11 +57,11 @@ body {
 
 
 .open-sans {
-  font-family: "Open Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
-  font-variation-settings:
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
     "wdth" 100;
 }
 
@@ -81,4 +81,122 @@ body {
     background-color: #018786;
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.focus-btn{
+    background-color: blue;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+/* Action Section Styles */
+.action-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 50px;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.action-content {
+    flex: 1;
+    max-width: 45%;
+    padding-right: 40px;
+}
+
+.action-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: #b0b0b0;
+}
+
+.action-btn {
+    padding: 15px 30px;
+    background-color: #03dac6;
+    color: #000000;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.action-btn:hover {
+    background-color: #018786;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.action-image {
+    flex: 1;
+    max-width: 50%;
+    position: relative;
+}
+
+.action-image img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.image-caption {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 8px 15px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.image-description {
+    margin-top: 20px;
+    color: #b0b0b0;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* Responsive Design */
+
+/* Action Section - Split Left/Right Layout */
+.action-section {
+    display: flex;
+    background-color: #ffffff;
+    padding: 80px 50px;
+    align-items: center; /* Vertically center items */
+}
+
+.action-content {
+    flex: 1;
+    padding-right: 40px; /* Space between content and image */
+}
+
+.action-image {
+    flex: 1;
+}
+
+/* Responsive: Stack on mobile */
+@media (max-width: 768px) {
+    .action-section {
+        flex-direction: column;
+        padding: 50px 20px;
+    }
+    
+    .action-content {
+        padding-right: 0;
+        margin-bottom: 40px;
+    }
+    
+    .action-image {
+        width: 400px;
+        height: 305px;
+    }
 }
